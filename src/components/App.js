@@ -7,7 +7,7 @@ const increment= () => {
   setCount((val) => val+1);
 }
 const decrement= () => {
-  setCount((val) => val > 0 ? val-1 : val);
+  setCount((val) => val <= 1 ? 1 : val-1);
 }
 function getState(val){
   if(val % 3 == 0){
