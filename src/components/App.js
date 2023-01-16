@@ -10,12 +10,12 @@ const decrement= () => {
   setCount((val) => val <= 1 ? 1 : val-1);
 }
 function getState(val){
-  if(val % 3 == 0){
-    return 'fizz';
+  if(val % 3 == 0 && val % 5 == 0){
+    return 'fizzbuzz';
   } else if(val % 5 == 0){
     return 'buzz';
-  }else if(val % 3 == 0 && val % 5 == 0){
-    return 'fizzbuzz';
+  }else if(val % 3 == 0){
+    return 'fizz';
   }else {
     return 'normal';
   }
