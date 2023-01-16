@@ -25,9 +25,9 @@ const state = getState(count);
   return (
     <>
       <div id="main">
-        <button onClick={increment}>Increase</button>
+        <button id="increment" onClick={increment}>Increase</button>
         <div id="counter" className={state}>{count}</div>
-        <button onClick={decrement}>Decrease</button>
+        <button id="decrement" onClick={decrement}>Decrease</button>
       </div>
     </>
   )
